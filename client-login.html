@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Login | Lucescu Realty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .login-section {
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 20px;
+    }
+    .login-box {
+      max-width: 420px;
+      width: 100%;
+      background: #f9f9f9;
+      padding: 50px 40px;
+      text-align: center;
+    }
+    .login-box h2 {
+      font-size: 22px;
+      font-weight: 300;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      color: #1a1a2e;
+    }
+    .login-box input {
+      width: 100%;
+      padding: 14px 18px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      background: #fff;
+      font-family: inherit;
+      font-size: 14px;
+      outline: none;
+    }
+    .login-box input:focus { border-color: #c9a84c; }
+    .login-box button {
+      width: 100%;
+      padding: 14px;
+      background: #1a1a2e;
+      color: #fff;
+      border: none;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .login-box button:hover { background: #333; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><img src="images/logo-white.png" alt="Lucescu Realty"></a>
+      <div class="mobile-toggle" onclick="document.querySelector('nav ul').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a>
+            <div class="dropdown"><a href="about.html#vision">Vision</a><a href="about.html#values">Values</a><a href="about.html#story">Story</a></div>
+          </li>
+          <li><a href="services.html">Services</a>
+            <div class="dropdown"><a href="services.html#institutional">Institutional Services</a><a href="services.html#private">Private Client</a><a href="services.html#capital">Capital Markets</a><a href="services.html#asset">Asset Management</a></div>
+          </li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="client-login.html" class="active">Client Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <div class="page-banner pt-header" style="background-color: #1a1a2e; min-height: 250px;">
+    <h1>Client Login</h1>
+  </div>
+
+  <!-- Login Form -->
+  <div class="login-section">
+    <div class="login-box">
+      <h2>Login</h2>
+      <form onsubmit="event.preventDefault(); alert('Please contact your account manager for login credentials.');">
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Sign In</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div class="footer-logo"><img src="images/footer-logo.png" alt="Lucescu Realty" style="height:50px;"></div>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="about.html">About Lucescu</a></li>
+          <li><a href="about.html#vision">Our Vision</a></li>
+          <li><a href="about.html#values">Our Values</a></li>
+          <li><a href="about.html#story">Our Story</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="services.html#institutional">Institutional Services</a></li>
+          <li><a href="services.html#private">Private Client</a></li>
+          <li><a href="services.html#capital">Capital Markets</a></li>
+          <li><a href="services.html#asset">Asset Management</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Recent News</h4>
+        <ul class="footer-news">
+          <li><a href="news.html">LUCESCU REALTY Marketing Mixed Use Project, Valued at $50+ Million, Located at Main Entrance to UNLV</a></li>
+          <li><a href="news.html">LUCESCU REALTY Selected by W.M. Grace Companies to Market for Sale Two (2), Grocery Anchored, Neighborhood Shopping Centers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 LUCESCU REALTY &nbsp;|&nbsp; ALL RIGHTS RESERVED &nbsp;|&nbsp;
+      <a href="privacy.html">PRIVACY POLICY</a> &nbsp;|&nbsp; WEBSITE BY ORCA
+    </div>
+  </footer>
+
+  <a href="tel:9497067772" class="phone-cta">&#9742; LET'S TALK</a>
+  <script src="js/main.js"></script>
+</body>
+</html>
